@@ -1,0 +1,146 @@
+/* Global styling for body tag */
+body {
+    font-family: 'Nunito', sans-serif; /* Apply Nunito font */
+    font-size: 16px; /* Default font size */
+    background-color: #FAFDF2; /* Background color #FAFDF2 */
+    color: #465c97; /* Text color #465c97 */
+    margin: 0;
+    padding: 20px; /* Add padding to give space from edges */
+}
+
+/* Heading 1 styling */
+h1 {
+    font-family: 'Nunito', sans-serif; /* Apply Nunito font */
+    font-weight: 600; /* Use bold weight for heading */
+    font-size: 36px; /* Larger font size for heading 1 */
+    color: #465c97; /* Dark color for heading #465c97 */
+    margin-bottom: 20px;
+}
+
+/* Heading 2 styling */
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300; /* Use light weight for heading */
+    font-size: 28px; /* Smaller font size than h1 */
+    color: #469788; /* Color for heading #469788 */
+    margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300; /* Light weight for paragraphs */
+    font-size: 18px; /* Slightly larger font size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 15px;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #E7A3B4; /* Navigation background color #E7A3B4 */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #FAFDF2; /* Link text color #FAFDF2 */
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+
+/* Hover state for navigation links */
+nav ul li a:hover {
+    background-color: #469788; /* Darker background color on hover #469788 */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Styling for lists */
+ul {
+    list-style-type: square; /* Change bullet type to square */
+    padding-left: 20px; /* Add padding for indentation */
+    margin: 20px 0;
+}
+
+ol {
+    list-style-type: decimal; /* Decimal numbers for ordered lists */
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+/* Definition list styling */
+dl {
+    margin: 20px 0;
+}
+
+dt {
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+
+/* Flexbox container for way-finding (displaying menu horizontally) */
+nav ul {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+nav ul li {
+    padding: 5px 10px; /* Ensure menu items are at least 48px tall */
+}
+
+/* Pseudo-class for links inside content */
+a:focus {
+    outline: 3px solid #469788; /* teal outline when a link is focused */
+}
+
+/* footer stuff here */
+footer {
+    background-color: #E7A3B4;
+    text-align: center;
+    padding: 1rem;
+}
+footer p {
+    margin: 0;
+    font-size: .8rem;
+    letter-spacing: 3px;
+}
+footer p {
+    color: #FAFDF2; /* Text color in footer content */
+}
+/* Altering link colors inside <footer> section */
+footer p a {
+    color: #465c97; /* Link color in footer content */
+    text-decoration: none; /* No underline by default */
+}
+
+footer p a:hover {
+    color: #469788; /* teal color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Comments in CSS:
+   - Used Flexbox to make the menu horizontal.
+   - Applied borders with colors, thickness, and rounded corners.
+   - Used multiple font weights and sizes as required.
+   - Added link color changes specifically within <main> content area.
+*/
