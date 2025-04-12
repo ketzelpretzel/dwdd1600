@@ -1,81 +1,96 @@
+/* Define CSS variables for colors */
+:root {
+    --color-bg: #ffffff;
+    --color-text: #3b4a83;         /* Slightly deeper blue than #465c97 for better contrast */
+    --color-accent: #3e776e;       /* Darker teal for better contrast */
+    --color-nav-bg: #dc6a85;       /* Slightly deeper pink for better nav contrast */
+    --color-footer-text: #ffffff;
+    --color-footer-link: #3b4a83;  /* Matches new color-text for consistency */
+    --color-footer-hover: #3e776e; /* Darker hover to meet contrast standards */
+}
+
 /* Global styling for body tag */
-body {
-    font-family: 'Nunito', sans-serif; /* Apply Nunito font */
-    font-size: 16px; /* Default font size */
-    background-color: #FAFDF2; /* Background color #FAFDF2 */
-    color: #465c97; /* Text color #465c97 */
+html, body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     margin: 0;
-    padding: 20px; /* Add padding to give space from edges */
+    padding: 20px;
+    min-height: 100vh; /* Updated for full page height */
 }
 
 /* Heading 1 styling */
 h1 {
-    font-family: 'Nunito', sans-serif; /* Apply Nunito font */
-    font-weight: 600; /* Use bold weight for heading */
-    font-size: 36px; /* Larger font size for heading 1 */
-    color: #465c97; /* Dark color for heading #465c97 */
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--color-text);
     margin-bottom: 20px;
 }
 
 /* Heading 2 styling */
 h2 {
     font-family: 'Nunito', sans-serif;
-    font-weight: 300; /* Use light weight for heading */
-    font-size: 28px; /* Smaller font size than h1 */
-    color: #469788; /* Color for heading #469788 */
+    font-weight: 300;
+    font-size: 28px;
+    color: var(--color-accent);
     margin-bottom: 15px;
 }
 
 /* Paragraph styling */
 p {
     font-family: 'Nunito', sans-serif;
-    font-weight: 300; /* Light weight for paragraphs */
-    font-size: 18px; /* Slightly larger font size */
-    line-height: 1.6; /* Line height for readability */
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6;
     margin-bottom: 15px;
 }
 
 /* Navigation styling */
 nav {
-    background-color: #E7A3B4; /* Navigation background color #E7A3B4 */
+    background-color: var(--color-nav-bg);
     padding: 10px 0;
 }
 
 nav ul {
-    list-style: none; /* Remove bullet points */
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Flexbox for horizontal layout */
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
-    margin: 0 15px; /* Space between menu items */
+    margin: 0 15px;
+    padding: 5px 10px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: #FAFDF2; /* Link text color #FAFDF2 */
-    font-size: 18px;
+    text-decoration: none;
+    color: var(--color-bg);
+    font-size: 24px;
     padding: 10px;
     display: block;
 }
 
-/* Hover state for navigation links */
+/* Styling for active menu item */
+nav ul li a.active, 
 nav ul li a:hover {
-    background-color: #469788; /* Darker background color on hover #469788 */
-    border-radius: 5px; /* Rounded corners */
+    background-color: var(--color-accent);
+    border-radius: 5px;
 }
 
 /* Styling for lists */
 ul {
-    list-style-type: square; /* Change bullet type to square */
-    padding-left: 20px; /* Add padding for indentation */
+    list-style-type: square;
+    padding-left: 20px;
     margin: 20px 0;
 }
 
 ol {
-    list-style-type: decimal; /* Decimal numbers for ordered lists */
+    list-style-type: decimal;
     padding-left: 20px;
     margin: 20px 0;
 }
@@ -97,45 +112,33 @@ dd {
     margin-bottom: 5px;
 }
 
-
-/* Flexbox container for way-finding (displaying menu horizontally) */
-nav ul {
-    display: flex;
-    align-items: center; /* Center vertically */
-}
-
-nav ul li {
-    padding: 5px 10px; /* Ensure menu items are at least 48px tall */
-}
-
 /* Pseudo-class for links inside content */
 a:focus {
-    outline: 3px solid #469788; /* teal outline when a link is focused */
+    outline: 3px solid var(--color-accent);
 }
 
-/* footer stuff here */
+/* Footer styling */
 footer {
-    background-color: #E7A3B4;
+    background-color: var(--color-nav-bg);
     text-align: center;
     padding: 1rem;
 }
+
 footer p {
     margin: 0;
-    font-size: .8rem;
+    font-size: 18px;
     letter-spacing: 3px;
+    color: var(--color-footer-text);
 }
-footer p {
-    color: #FAFDF2; /* Text color in footer content */
-}
-/* Altering link colors inside <footer> section */
+
 footer p a {
-    color: #465c97; /* Link color in footer content */
-    text-decoration: none; /* No underline by default */
+    color: var(--color-footer-link);
+    text-decoration: none;
 }
 
 footer p a:hover {
-    color: #469788; /* teal color on hover */
-    text-decoration: underline; /* Underline on hover */
+    color: var(--color-footer-hover);
+    text-decoration: underline;
 }
 
 /* Comments in CSS:
@@ -143,4 +146,7 @@ footer p a:hover {
    - Applied borders with colors, thickness, and rounded corners.
    - Used multiple font weights and sizes as required.
    - Added link color changes specifically within <main> content area.
+   - Ensured page height is at least 100vh with min-height.
+   - Added CSS custom properties (variables) for color consistency.
+   - Updated navigation to highlight the active menu item dynamically.
 */
