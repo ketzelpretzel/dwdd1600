@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="description" content="Contact Beach City Travel for additional info." >
+  <title>Beach City Travel</title>
+  <link rel="icon" href="images/favicon.ico" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+
+  <header>
+    <img src="images/logo.webp" alt="logo">
+    <div>
+    <h1>Beach City Travel</h1>
+    <p>The Crystal Clear Choice for Coastal Fun.</p>
+    </div>
+</header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Destinations</a></li>
+      <li><a href="video.html">History</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div>
+    <h2>Contact Us</h2>
+    <p>Reach out to us for more information about your next Beach City adventure!</p>
+  </div>
+  </header>
+
+  <main class="container">
+    <form action="thanks.html" method="get">
+
+      <!-- Full Name -->
+      <fieldset>
+        <legend>Full Name</legend>
+        <label for="fullname">Your Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Your name" required>
+      </fieldset>
+
+      <!-- Email Address -->
+      <fieldset>
+        <legend>Email Address</legend>
+        <label for="email">Your Email:</label>
+        <input type="text" id="email" name="email" placeholder="you@example.com" required>
+      </fieldset>
+
+      <!-- Phone Number -->
+      <fieldset>
+        <legend>Phone Number</legend>
+        <label for="phone">Your Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="(555) 555-5555" required>
+      </fieldset>
+
+      <!-- Destination Dropdown -->
+      <fieldset>
+        <legend>Select a Package</legend>
+        <p>Which getaway package are you interested in?</p>
+        <label for="destination">Choose a Destination:</label>
+        <select id="destination" name="destination" required>
+          <option value="">-- Please select --</option>
+          <option value="lighthouse">Romantic R&R</option>
+          <option value="boardwalk">Family Boardwalk & Beach Break</option>
+          <option value="homeworld">Little Homeworld Sabbatical</option>
+        </select>
+      </fieldset>
+
+      <!-- Date Picker -->
+      <fieldset>
+        <legend>Preferred Travel Date</legend>
+        <p>When should we expect you?</p>
+        <label for="travel-date">Choose a Date:</label>
+        <input type="date" id="travel-date" name="travel-date" required>
+      </fieldset>
+
+      <!-- Radio Buttons: Group Size -->
+      <fieldset>
+        <legend>Group Size</legend>
+        <p>How many people are you bringing?</p>
+        <label><input type="radio" name="group-size" value="solo" required> Just Me</label><br>
+        <label><input type="radio" name="group-size" value="couple"> A Couple</label><br>
+        <label><input type="radio" name="group-size" value="family"> Family or Group</label>
+      </fieldset>
+
+      <!-- Comments -->
+      <fieldset>
+        <legend>Special Accomadations</legend>
+        <label for="comments">Let us know!</label>
+        <textarea id="comments" name="comments" placeholder="Accessibility questions, allergies, etc..."></textarea>
+      </fieldset>
+
+      <!-- Submit -->
+        <input type="submit" value="Plan My Trip!">
+
+
+    </form>
+  </main>
+  <br>
+
+  <footer>
+    <p><em>Call us at <a href="tel:+123456789">+1 (555) 231-9367</a> to book your trip today!</em></p>
+    <p>&copy; 2025 Beach City Travel &bull; All Rights Reserved</p>
+    <p>132 Oceanview Ave, Beach City, Delmarva USA</p>
+  </footer>
+
+</body>
+</html>
